@@ -1,18 +1,7 @@
 {
-  "name": "contact-manager",
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
+    "functions": {
+        "app/api/**/*.ts": {
+            "maxDuration": 30
+        }
     }
-  ],
-  "env": {
-    "MONGODB_URI": "@mongodb_uri"
-  },
-  "functions": {
-    "app/api/**/*.ts": {
-      "maxDuration": 30
-    }
-  }
 }
